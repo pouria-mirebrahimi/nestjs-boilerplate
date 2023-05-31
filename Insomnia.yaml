@@ -1,0 +1,121 @@
+_type: export
+__export_format: 4
+__export_date: 2023-01-03T10:32:49.991Z
+__export_source: insomnia.desktop.app:v2022.7.0
+resources:
+  - _id: req_55c2a45795d3414aac946257cb0107b8
+    parentId: fld_8dbda69d4eb342d7b74195e03dbef95d
+    modified: 1672741437842
+    created: 1672734192628
+    url: "{{ _.url }}/admin/1"
+    name: New Request
+    description: ""
+    method: GET
+    body:
+      mimeType: application/json
+      text: ""
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+    authentication: {}
+    metaSortKey: -1672734192628
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: fld_8dbda69d4eb342d7b74195e03dbef95d
+    parentId: wrk_fa237efae1ce4a60be3e68c48fd539e8
+    modified: 1672734190876
+    created: 1672734190876
+    name: admin
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1672734190877
+    _type: request_group
+  - _id: wrk_fa237efae1ce4a60be3e68c48fd539e8
+    parentId: null
+    modified: 1672674800830
+    created: 1672674800830
+    name: API gateway v2
+    description: ""
+    scope: collection
+    _type: workspace
+  - _id: req_4c14e1ff4c8045b88a6bdce908470da8
+    parentId: fld_65f603f371274dea9f7f87f20658e9b5
+    modified: 1672674991876
+    created: 1672674916454
+    url: "{{ _.url }}/greeting"
+    name: greeting
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1672674916454
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: fld_65f603f371274dea9f7f87f20658e9b5
+    parentId: wrk_fa237efae1ce4a60be3e68c48fd539e8
+    modified: 1672674832804
+    created: 1672674832804
+    name: general
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1672674832805
+    _type: request_group
+  - _id: env_6ff9b75b1fed31fa18df71b9dd05b7f872c5a6b5
+    parentId: wrk_fa237efae1ce4a60be3e68c48fd539e8
+    modified: 1672674896152
+    created: 1672674800841
+    name: Base Environment
+    data: {}
+    dataPropertyOrder: {}
+    color: null
+    isPrivate: false
+    metaSortKey: 1672674800841
+    _type: environment
+  - _id: jar_6ff9b75b1fed31fa18df71b9dd05b7f872c5a6b5
+    parentId: wrk_fa237efae1ce4a60be3e68c48fd539e8
+    modified: 1672674800846
+    created: 1672674800846
+    name: Default Jar
+    cookies: []
+    _type: cookie_jar
+  - _id: spc_7557bf8d9cbe445aa99978e03b587915
+    parentId: wrk_fa237efae1ce4a60be3e68c48fd539e8
+    modified: 1672674800832
+    created: 1672674800832
+    fileName: API gateway v2
+    contents: ""
+    contentType: yaml
+    _type: api_spec
+  - _id: env_1c7be5521f894d94ac4f6ea61553d2c6
+    parentId: env_6ff9b75b1fed31fa18df71b9dd05b7f872c5a6b5
+    modified: 1672741336581
+    created: 1672674888208
+    name: local development
+    data:
+      url: localhost:3001/api/v2
+      access_token: ""
+    dataPropertyOrder:
+      "&":
+        - url
+        - access_token
+    color: null
+    isPrivate: false
+    metaSortKey: 1672674888208
+    _type: environment

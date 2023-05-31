@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json.schemastore.org/nest-cli",
+  "collection": "@nestjs/schematics",
+  "sourceRoot": "src",
+  "compilerOptions": {
+    "assets": [
+      {
+        "include": "common/config/",
+        "outDir": "dist",
+        "watchAssets": true
+      },
+      {
+        "include": "common/envs/",
+        "outDir": "dist",
+        "watchAssets": true
+      },
+      {
+        "include": "common/asset/",
+        "outDir": "dist",
+        "watchAssets": true
+      }
+    ]
+  }
+}

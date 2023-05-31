@@ -1,0 +1,75 @@
+{
+  "ServerConfiguration": {
+    "address": "localhost",
+    "port": 3001
+  },
+  "Logging": {
+    "level": "silly",
+    "label": "development"
+  },
+  "DateTime": {
+    "timezone": "UTC"
+  },
+  "Uploads": {
+    "basedir": "uploads"
+  },
+  "SQLServer": {
+    "type": "mssql",
+    "name": "db_nest_boilerplate",
+    "host": "localhost",
+    "port": "1433",
+    "username": "sa",
+    "password": "msS@lserver"
+  },
+  "PostgreSql": {
+    "type": "postgres",
+    "name": "db_nest_boilerplate",
+    "host": "localhost",
+    "port": "5432",
+    "username": "postgres",
+    "password": "postgres"
+  },
+  "Redis": {
+    "host": "localhost",
+    "port": "6379"
+  },
+  "JWT": {
+    "access-token": {
+      "secret": "ab",
+      "expiration": "6000000"
+    },
+    "refresh-token": {
+      "secret": "31c",
+      "expiration": "120000"
+    },
+    "password-token": {
+      "secret": "30",
+      "expiration": "60000"
+    },
+    "email-token": {
+      "change": {
+        "secret": "e24",
+        "expiration": "60000"
+      },
+      "verification": {
+        "secret": "ec88",
+        "expiration": "120000"
+      }
+    },
+    "invitation": {
+      "secret": "b25",
+      "expiration": "120000"
+    },
+    "encryption": "e62"
+  },
+  "Front-URLs": {
+    "VERIFY_EMAIL_ADDRESS": "",
+    "USER_COMPLETE_INVITATION": "",
+    "DELETE_ACCOUNT_ADDRESS": "",
+    "RESET_PASSWORD_ADDRESS": "",
+    "PARENT_HOME": "",
+    "ADD_USER": "",
+    "TUTOR_CONNECT_STRIPE_RETURN": "",
+    "LESSON_REVIEW_BY_STUDENT": ""
+  }
+}
