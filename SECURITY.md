@@ -1,1 +1,1 @@
-# Knektu Security Options and Rules
+# Security Options and Rules
